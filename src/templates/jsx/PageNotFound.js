@@ -2,7 +2,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-class H1 extends React.Component {
+class PageNotFound extends React.Component {
+    /*
+     *  @componentDidMount()
+     *  React Lifecyle Function
+     */
+    componentDidMount(){
+        document.title = "Abhay Pai | Page Not Found";
+    }
+
     render() {
         return (
             <div className='jumbotron jumbotron-fluid bg-transparent text-white m-0 p-0'>
@@ -14,8 +22,8 @@ class H1 extends React.Component {
     }
 }
 
-H1.propTypes = {
+PageNotFound.propTypes = {
     content: PropTypes.string
 };
 
-export default H1;
+export default PageNotFound;

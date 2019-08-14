@@ -3,6 +3,14 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 class Skills extends React.Component {
+    /*
+     *  @componentDidMount()
+     *  React Lifecyle Function
+     */
+    componentDidMount(){
+        document.title = "Abhay Pai | Skills";
+    }
+
     render() {
         return (
             <div className='jumbotron jumbotron-fluid bg-transparent text-white m-0 p-0'>

@@ -3,6 +3,14 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 class About extends React.Component {
+    /*
+     *  @componentDidMount()
+     *  React Lifecyle Function
+     */
+    componentDidMount(){
+        document.title = "Abhay Pai | About";
+    }
+
     render() {
         /*eslint max-len: 0*/
         return (

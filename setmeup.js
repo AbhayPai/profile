@@ -22,7 +22,7 @@ module.exports = function(config) {
     this.createHtml = function() {
         return [
             new config.HtmlWebpackPlugin({
-                title: 'Hello World',
+                title: 'Abhay Pai',
                 inject: false,
                 minify: {
                     removeComments: true,

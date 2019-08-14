@@ -3,6 +3,14 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 class WorkExperience extends React.Component {
+    /*
+     *  @componentDidMount()
+     *  React Lifecyle Function
+     */
+    componentDidMount(){
+        document.title = "Abhay Pai | Work Experience";
+    }
+
     render() {
         /*eslint max-len: 0*/
         return (

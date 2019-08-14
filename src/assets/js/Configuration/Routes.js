@@ -4,7 +4,7 @@ import React from 'react';
 // JSX
 import AboutJSX from 'TemplatesPath/jsx/About';
 import SkillsJSX from 'TemplatesPath/jsx/Skills';
-import NotFoundJSX from 'TemplatesPath/jsx/NotFound';
+import PageNotFoundJSX from 'TemplatesPath/jsx/PageNotFound';
 import EducationJSX from 'TemplatesPath/jsx/Education';
 import WorkExperienceJSX from 'TemplatesPath/jsx/WorkExperience';
 
@@ -34,7 +34,7 @@ function Routes() {
         {
             path: '',
             title: '',
-            pathComponent: () => <NotFoundJSX content='Page Not Found' />
+            pathComponent: () => <PageNotFoundJSX content='Page Not Found' />
         },
     ];
 
