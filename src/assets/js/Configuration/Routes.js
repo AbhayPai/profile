@@ -4,9 +4,12 @@ import React from 'react';
 // JSX
 import AboutJSX from 'TemplatesPath/jsx/About';
 import SkillsJSX from 'TemplatesPath/jsx/Skills';
-import PageNotFoundJSX from 'TemplatesPath/jsx/PageNotFound';
+import ConceptsJSX from 'TemplatesPath/jsx/Concepts';
 import EducationJSX from 'TemplatesPath/jsx/Education';
+import PetProjectJSX from 'TemplatesPath/jsx/PetProject';
+import PageNotFoundJSX from 'TemplatesPath/jsx/PageNotFound';
 import WorkExperienceJSX from 'TemplatesPath/jsx/WorkExperience';
+import BasicFrameWorksJSX from 'TemplatesPath/jsx/BasicFrameWorks';
 
 function Routes() {
     const routes = [
@@ -30,6 +33,21 @@ function Routes() {
             path: '/work-experience',
             title: 'Work Experience',
             pathComponent: () => <WorkExperienceJSX content='Work Experience' />
+        },
+        {
+            path: '/pet-project',
+            title: 'Pet Project',
+            pathComponent: () => <PetProjectJSX content='Pet Project' />
+        },
+        {
+            path: '/basic-frameworks',
+            title: 'Basic Frameworks',
+            pathComponent: () => <BasicFrameWorksJSX content='Basic Frameworks' />
+        },
+        {
+            path: '/concepts',
+            title: 'Concepts',
+            pathComponent: () => <ConceptsJSX content='Concepts' />
         },
         {
             path: '',
