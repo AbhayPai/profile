@@ -18,8 +18,8 @@ class BasicFrameWorks extends React.Component {
                 <div className='container-fluid'>
                     <h1 className='display-1'>{this.props.content}</h1>
                     <div className='row'>
-                        <div className='col-12 col-sm-2 d-flex'>
-                            <div className='card bg-danger text-center mb-3'>
+                        <div className='d-flex m-3'>
+                            <div className='card bg-danger text-center'>
                                 <div className='card-header'>Boilerplate Webpack JS</div>
                                 <div className='card-body'>
                                     <a href='https://github.com/AbhayPai/boilerplate-webpack-js'
@@ -31,8 +31,8 @@ class BasicFrameWorks extends React.Component {
                                 </div>
                             </div>
                         </div>
-                        <div className='col-12 col-sm-2 d-flex'>
-                            <div className='card bg-danger text-center mb-3'>
+                        <div className='d-flex m-3'>
+                            <div className='card bg-danger text-center'>
                                 <div className='card-header'>Boilerplate for Slim Guzzle Webpack Js Sass Image</div>
                                 <div className='card-body'>
                                     <a href='https://github.com/AbhayPai/boilerplate-slim-guzzle-webpack-js-sass-image'
@@ -44,8 +44,8 @@ class BasicFrameWorks extends React.Component {
                                 </div>
                             </div>
                         </div>
-                        <div className='col-12 col-sm-2 d-flex'>
-                            <div className='card bg-danger text-center mb-3'>
+                        <div className='d-flex m-3'>
+                            <div className='card bg-danger text-center'>
                                 <div className='card-header'>Boilerplate for Slim Webpack Js Sass Image Bootsrap 4</div>
                                 <div className='card-body'>
                                     <a href='https://github.com/AbhayPai/boilerplate-slim-webpack-js-sass-image'
@@ -57,8 +57,8 @@ class BasicFrameWorks extends React.Component {
                                 </div>
                             </div>
                         </div>
-                        <div className='col-12 col-sm-2 d-flex'>
-                            <div className='card bg-danger text-center mb-3'>
+                        <div className='d-flex m-3'>
+                            <div className='card bg-danger text-center'>
                                 <div className='card-header'>Boilerplate Webpack JS and SASS</div>
                                 <div className='card-body'>
                                     <a href='https://github.com/AbhayPai/boilerplate-webpack-js-sass'
@@ -70,8 +70,8 @@ class BasicFrameWorks extends React.Component {
                                 </div>
                             </div>
                         </div>
-                        <div className='col-12 col-sm-2 d-flex'>
-                            <div className='card bg-danger text-center mb-3'>
+                        <div className='d-flex m-3'>
+                            <div className='card bg-danger text-center'>
                                 <div className='card-header'>Boilerplate Webpack JS, SASS and Image</div>
                                 <div className='card-body'>
                                     <a href='https://github.com/AbhayPai/boilerplate-webpack-js-sass-image'
@@ -83,8 +83,8 @@ class BasicFrameWorks extends React.Component {
                                 </div>
                             </div>
                         </div>
-                        <div className='col-12 col-sm-2 d-flex'>
-                            <div className='card bg-danger text-center mb-3'>
+                        <div className='d-flex m-3'>
+                            <div className='card bg-danger text-center'>
                                 <div className='card-header'>Boilerplate Webpack JS, SASS, Image and Bootstrap 4</div>
                                 <div className='card-body'>
                                     <a href='https://github.com/AbhayPai/boilerplate-webpack-js-sass-image-bootstrap4'
@@ -96,8 +96,8 @@ class BasicFrameWorks extends React.Component {
                                 </div>
                             </div>
                         </div>
-                        <div className='col-12 col-sm-2 d-flex'>
-                            <div className='card bg-danger text-center mb-3'>
+                        <div className='d-flex m-3'>
+                            <div className='card bg-danger text-center'>
                                 <div className='card-header'>Boilerplate Webpack JS, SASS, Image, Bootstrap 4 and Reactjs</div>
                                 <div className='card-body'>
                                     <a href='https://github.com/AbhayPai/boilerplate-webpack-js-sass-image-bootstrap4'
@@ -109,8 +109,8 @@ class BasicFrameWorks extends React.Component {
                                 </div>
                             </div>
                         </div>
-                        <div className='col-12 col-sm-2 d-flex'>
-                            <div className='card bg-danger text-center mb-3'>
+                        <div className='d-flex m-3'>
+                            <div className='card bg-danger text-center'>
                                 <div className='card-header'>Basic Building of ReactJs with Webapck</div>
                                 <div className='card-body'>
                                     <a href='https://github.com/AbhayPai/reactjs-basic-build'
@@ -122,8 +122,8 @@ class BasicFrameWorks extends React.Component {
                                 </div>
                             </div>
                         </div>
-                        <div className='col-12 col-sm-2 d-flex'>
-                            <div className='card bg-danger text-center mb-3'>
+                        <div className='d-flex m-3'>
+                            <div className='card bg-danger text-center'>
                                 <div className='card-header'>Boilerplate for Slim</div>
                                 <div className='card-body'>
                                     <a href='https://github.com/AbhayPai/boilerplate-slim'

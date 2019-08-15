@@ -18,8 +18,8 @@ class PetProject extends React.Component {
                 <div className='container-fluid'>
                     <h1 className='display-1'>{this.props.content}</h1>
                     <div className='row'>
-                        <div className='col-12 col-sm-2 d-flex'>
-                            <div className='card bg-danger text-center mb-3'>
+                        <div className='d-flex m-3'>
+                            <div className='card bg-danger text-center'>
                                 <div className='card-header'>App Video Streaming</div>
                                 <div className='card-body'>
                                     <a href='https://github.com/AbhayPai/calendar'
@@ -31,8 +31,8 @@ class PetProject extends React.Component {
                                 </div>
                             </div>
                         </div>
-                        <div className='col-12 col-sm-2 d-flex'>
-                            <div className='card bg-danger text-center mb-3'>
+                        <div className='d-flex m-3'>
+                            <div className='card bg-danger text-center'>
                                 <div className='card-header'>Todo List</div>
                                 <div className='card-body'>
                                     <a href='https://github.com/AbhayPai/todo-list'
@@ -44,8 +44,8 @@ class PetProject extends React.Component {
                                 </div>
                             </div>
                         </div>
-                        <div className='col-12 col-sm-2 d-flex'>
-                            <div className='card bg-danger text-center mb-3'>
+                        <div className='d-flex m-3'>
+                            <div className='card bg-danger text-center'>
                                 <div className='card-header'>Basic Calculator</div>
                                 <div className='card-body'>
                                     <a href='https://github.com/AbhayPai/calculator'
@@ -57,8 +57,8 @@ class PetProject extends React.Component {
                                 </div>
                             </div>
                         </div>
-                        <div className='col-12 col-sm-2 d-flex'>
-                            <div className='card bg-danger text-center mb-3'>
+                        <div className='d-flex m-3'>
+                            <div className='card bg-danger text-center'>
                                 <div className='card-header'>Todo List</div>
                                 <div className='card-body'>
                                     <a href='https://github.com/AbhayPai/todo-list'
@@ -70,8 +70,8 @@ class PetProject extends React.Component {
                                 </div>
                             </div>
                         </div>
-                        <div className='col-12 col-sm-2 d-flex'>
-                            <div className='card bg-danger text-center mb-3'>
+                        <div className='d-flex m-3'>
+                            <div className='card bg-danger text-center'>
                                 <div className='card-header'>ReactJs Single Page Website</div>
                                 <div className='card-body'>
                                     <a href='https://github.com/AbhayPai/reactjs-spw'
@@ -83,8 +83,8 @@ class PetProject extends React.Component {
                                 </div>
                             </div>
                         </div>
-                        <div className='col-12 col-sm-2 d-flex'>
-                            <div className='card bg-danger text-center mb-3'>
+                        <div className='d-flex m-3'>
+                            <div className='card bg-danger text-center'>
                                 <div className='card-header'>ReactJs Single Page Website</div>
                                 <div className='card-body'>
                                     <a href='https://github.com/AbhayPai/reactjs-xhr'
@@ -96,8 +96,8 @@ class PetProject extends React.Component {
                                 </div>
                             </div>
                         </div>
-                        <div className='col-12 col-sm-2 d-flex'>
-                            <div className='card bg-danger text-center mb-3'>
+                        <div className='d-flex m-3'>
+                            <div className='card bg-danger text-center'>
                                 <div className='card-header'>ReactJs IO</div>
                                 <div className='card-body'>
                                     <a href='https://github.com/AbhayPai/reactjs-io'
@@ -109,8 +109,8 @@ class PetProject extends React.Component {
                                 </div>
                             </div>
                         </div>
-                        <div className='col-12 col-sm-2 d-flex'>
-                            <div className='card bg-danger text-center mb-3'>
+                        <div className='d-flex m-3'>
+                            <div className='card bg-danger text-center'>
                                 <div className='card-header'>ReactJs Router Dom</div>
                                 <div className='card-body'>
                                     <a href='https://github.com/AbhayPai/reactjs-router-dom'

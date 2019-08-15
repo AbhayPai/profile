@@ -18,8 +18,8 @@ class Concepts extends React.Component {
                 <div className='container-fluid'>
                     <h1 className='display-1'>{this.props.content}</h1>
                     <div className='row'>
-                        <div className='col-12 col-sm-2 d-flex'>
-                            <div className='card bg-danger text-center mb-3'>
+                        <div className='d-flex m-3'>
+                            <div className='card bg-danger text-center'>
                                 <div className='card-header'>Iframe Communication</div>
                                 <div className='card-body'>
                                     <a href='https://github.com/AbhayPai/iframe-communication-1'
@@ -31,8 +31,8 @@ class Concepts extends React.Component {
                                 </div>
                             </div>
                         </div>
-                        <div className='col-12 col-sm-2 d-flex'>
-                            <div className='card bg-danger text-center mb-3'>
+                        <div className='d-flex m-3'>
+                            <div className='card bg-danger text-center'>
                                 <div className='card-header'>Html Page Cache</div>
                                 <div className='card-body'>
                                     <a href='https://github.com/AbhayPai/htmlpagecache'
@@ -44,8 +44,8 @@ class Concepts extends React.Component {
                                 </div>
                             </div>
                         </div>
-                        <div className='col-12 col-sm-2 d-flex'>
-                            <div className='card bg-danger text-center mb-3'>
+                        <div className='d-flex m-3'>
+                            <div className='card bg-danger text-center'>
                                 <div className='card-header'>Javascript Pubsub</div>
                                 <div className='card-body'>
                                     <a href='https://github.com/AbhayPai/pubsub'
@@ -57,8 +57,8 @@ class Concepts extends React.Component {
                                 </div>
                             </div>
                         </div>
-                        <div className='col-12 col-sm-2 d-flex'>
-                            <div className='card bg-danger text-center mb-3'>
+                        <div className='d-flex m-3'>
+                            <div className='card bg-danger text-center'>
                                 <div className='card-header'>Crosstab Communication</div>
                                 <div className='card-body'>
                                     <a href='https://github.com/AbhayPai/crosstab'
@@ -70,8 +70,8 @@ class Concepts extends React.Component {
                                 </div>
                             </div>
                         </div>
-                        <div className='col-12 col-sm-2 d-flex'>
-                            <div className='card bg-danger text-center mb-3'>
+                        <div className='d-flex m-3'>
+                            <div className='card bg-danger text-center'>
                                 <div className='card-header'>Web Worker</div>
                                 <div className='card-body'>
                                     <a href='https://github.com/AbhayPai/webworker'
@@ -83,8 +83,8 @@ class Concepts extends React.Component {
                                 </div>
                             </div>
                         </div>
-                        <div className='col-12 col-sm-2 d-flex'>
-                            <div className='card bg-danger text-center mb-3'>
+                        <div className='d-flex m-3'>
+                            <div className='card bg-danger text-center'>
                                 <div className='card-header'>Web Socket</div>
                                 <div className='card-body'>
                                     <a href='https://github.com/AbhayPai/websocket'
@@ -96,8 +96,8 @@ class Concepts extends React.Component {
                                 </div>
                             </div>
                         </div>
-                        <div className='col-12 col-sm-2 d-flex'>
-                            <div className='card bg-danger text-center mb-3'>
+                        <div className='d-flex m-3'>
+                            <div className='card bg-danger text-center'>
                                 <div className='card-header'>Service Worker</div>
                                 <div className='card-body'>
                                     <a href='https://github.com/AbhayPai/service-worker'
@@ -109,8 +109,8 @@ class Concepts extends React.Component {
                                 </div>
                             </div>
                         </div>
-                        <div className='col-12 col-sm-2 d-flex'>
-                            <div className='card bg-danger text-center mb-3'>
+                        <div className='d-flex m-3'>
+                            <div className='card bg-danger text-center'>
                                 <div className='card-header'>Web Scraping</div>
                                 <div className='card-body'>
                                     <a href='https://github.com/AbhayPai/webscraping'
@@ -122,8 +122,8 @@ class Concepts extends React.Component {
                                 </div>
                             </div>
                         </div>
-                        <div className='col-12 col-sm-2 d-flex'>
-                            <div className='card bg-danger text-center mb-3'>
+                        <div className='d-flex m-3'>
+                            <div className='card bg-danger text-center'>
                                 <div className='card-header'>Composer</div>
                                 <div className='card-body'>
                                     <a href='https://github.com/AbhayPai/composer-psr-4'
@@ -135,8 +135,8 @@ class Concepts extends React.Component {
                                 </div>
                             </div>
                         </div>
-                        <div className='col-12 col-sm-2 d-flex'>
-                            <div className='card bg-danger text-center mb-3'>
+                        <div className='d-flex m-3'>
+                            <div className='card bg-danger text-center'>
                                 <div className='card-header'>Geolocation API</div>
                                 <div className='card-body'>
                                     <a href='https://github.com/AbhayPai/geolocation'
