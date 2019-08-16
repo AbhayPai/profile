@@ -16,8 +16,8 @@ class Concepts extends React.Component {
         return (
             <div className='jumbotron jumbotron-fluid bg-transparent text-white m-0 p-0'>
                 <div className='container-fluid'>
-                    <h1 className='display-1'>{this.props.content}</h1>
-                    <div className='row'>
+                    <h1 className='display-1 animated fadeIn delay'>{this.props.content}</h1>
+                    <div className='row animated fadeIn delay-1s'>
                         <div className='d-flex m-3'>
                             <div className='card bg-danger text-center'>
                                 <div className='card-header'>Iframe Communication</div>

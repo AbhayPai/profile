@@ -12,6 +12,7 @@
     <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
     <title><%= htmlWebpackPlugin.options.title %></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <% for (var css in htmlWebpackPlugin.options.assets.css) { %>
         <link type="text/css"  href="<%= htmlWebpackPlugin.options.assets.css[css] %>" rel="stylesheet">
     <% } %>

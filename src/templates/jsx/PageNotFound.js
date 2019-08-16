@@ -13,9 +13,9 @@ class PageNotFound extends React.Component {
 
     render() {
         return (
-            <div className='jumbotron jumbotron-fluid bg-transparent text-white m-0 p-0'>
+            <div className='jumbotron jumbotron-fluid bg-transparent text-white m-0 p-0 animated flash infinite slow'>
                 <div className='container-fluid'>
-                    <h1 className='display-1'>{this.props.content}</h1>
+                    <h1 className='display-1 text-center'>{this.props.content}</h1>
                 </div>
             </div>
         );
