@@ -6,7 +6,7 @@ import AboutJSX from 'TemplatesPath/jsx/About';
 import SkillsJSX from 'TemplatesPath/jsx/Skills';
 import ConceptsJSX from 'TemplatesPath/jsx/Concepts';
 import EducationJSX from 'TemplatesPath/jsx/Education';
-import PetProjectJSX from 'TemplatesPath/jsx/PetProject';
+import ProjectJSX from 'TemplatesPath/jsx/Project';
 import PageNotFoundJSX from 'TemplatesPath/jsx/PageNotFound';
 import WorkExperienceJSX from 'TemplatesPath/jsx/WorkExperience';
 import BasicFrameWorksJSX from 'TemplatesPath/jsx/BasicFrameWorks';
@@ -35,9 +35,9 @@ function Routes() {
             pathComponent: () => <WorkExperienceJSX content='Work Experience' />
         },
         {
-            path: '/pet-project',
-            title: 'Pet Project',
-            pathComponent: () => <PetProjectJSX content='Pet Project' />
+            path: '/project',
+            title: 'Project',
+            pathComponent: () => <ProjectJSX content='Project' />
         },
         {
             path: '/basic-frameworks',

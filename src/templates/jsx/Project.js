@@ -2,13 +2,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-class PetProject extends React.Component {
+class Project extends React.Component {
     /*
      *  @componentDidMount()
      *  React Lifecyle Function
      */
     componentDidMount(){
-        document.title = 'Abhay Pai | Pet Project';
+        document.title = 'Abhay Pai | Project';
     }
 
     render() {
@@ -26,7 +26,7 @@ class PetProject extends React.Component {
                                         className='btn btn-primary' target='_blank'>Download</a>
                                 </div>
                                 <div className='card-footer'>
-                                    <a href='https://abhaypai.github.io/calendar/'
+                                    <a href='https://abhaypai.github.io/app-video-streaming/'
                                         className='btn btn-primary' target='_blank'>Live Demo</a>
                                 </div>
                             </div>
@@ -52,20 +52,7 @@ class PetProject extends React.Component {
                                         className='btn btn-primary' target='_blank'>Download</a>
                                 </div>
                                 <div className='card-footer'>
-                                    <a href='https://abhaypai.github.io/todo-list/'
-                                        className='btn btn-primary' target='_blank'>Live Demo</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div className='d-flex m-3'>
-                            <div className='card bg-danger text-center'>
-                                <div className='card-header'>Todo List</div>
-                                <div className='card-body'>
-                                    <a href='https://github.com/AbhayPai/todo-list'
-                                        className='btn btn-primary' target='_blank'>Download</a>
-                                </div>
-                                <div className='card-footer'>
-                                    <a href='https://abhaypai.github.io/todo-list/'
+                                    <a href='https://abhaypai.github.io/calculator/'
                                         className='btn btn-primary' target='_blank'>Live Demo</a>
                                 </div>
                             </div>
@@ -85,7 +72,7 @@ class PetProject extends React.Component {
                         </div>
                         <div className='d-flex m-3'>
                             <div className='card bg-danger text-center'>
-                                <div className='card-header'>ReactJs Single Page Website</div>
+                                <div className='card-header'>ReactJs XHR</div>
                                 <div className='card-body'>
                                     <a href='https://github.com/AbhayPai/reactjs-xhr'
                                         className='btn btn-primary' target='_blank'>Download</a>
@@ -129,8 +116,8 @@ class PetProject extends React.Component {
     }
 }
 
-PetProject.propTypes = {
+Project.propTypes = {
     content: PropTypes.string
 };
 
-export default PetProject;
+export default Project;
