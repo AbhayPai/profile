@@ -22,7 +22,7 @@ class Project extends React.Component {
                             <div className='card bg-danger text-center'>
                                 <div className='card-header'>App Video Streaming</div>
                                 <div className='card-body'>
-                                    <a href='https://github.com/AbhayPai/calendar'
+                                    <a href='https://github.com/AbhayPai/app-video-streaming'
                                         className='btn btn-primary' target='_blank'>Download</a>
                                 </div>
                                 <div className='card-footer'>
