@@ -1,162 +1,67 @@
 // Libraries
 import React from 'react';
-import PropTypes from 'prop-types';
 
 class Concepts extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            data: [],
+            error: null,
+            isLoaded: false,
+        };
+    }
+
     /*
      *  @componentDidMount()
      *  React Lifecyle Function
      */
-    componentDidMount(){
-        document.title = 'Abhay Pai | Concepts';
+    componentDidMount() {
+        document.title = "Abhay Pai | Concepts";
+
+        fetch('https://paiabhay.000webhostapp.com/api/concepts').then((response) => {
+            if (response.status !== 200) {
+                return;
+            }
+
+            return response.json();
+        }).then((data) => {
+            this.setState({
+                data: data,
+                isLoaded: true,
+            });
+
+            return;
+        }).catch((error)=> {
+            this.setState({
+                error,
+                isLoaded: true,
+            });
+
+            return;
+        });
     }
 
+    /*
+     *  @render()
+     *  React Lifecyle Function
+     */
     render() {
-        /*eslint max-len: 0*/
-        return (
-            <div className='jumbotron jumbotron-fluid bg-transparent text-white m-0 p-0'>
-                <div className='container-fluid'>
-                    <h1 className='display-1 animated fadeIn delay'>{this.props.content}</h1>
-                    <div className='row animated fadeIn delay-1s'>
-                        <div className='d-flex m-3'>
-                            <div className='card bg-danger text-center'>
-                                <div className='card-header'>Iframe Communication</div>
-                                <div className='card-body'>
-                                    <a href='https://github.com/AbhayPai/iframe-communication-1'
-                                        className='btn btn-primary' target='_blank'>Download</a>
-                                </div>
-                                <div className='card-footer'>
-                                    <a href='https://abhaypai.github.io/iframe-communication-1/'
-                                        className='btn btn-primary' target='_blank'>Live Demo</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div className='d-flex m-3'>
-                            <div className='card bg-danger text-center'>
-                                <div className='card-header'>Html Page Cache</div>
-                                <div className='card-body'>
-                                    <a href='https://github.com/AbhayPai/htmlpagecache'
-                                        className='btn btn-primary' target='_blank'>Download</a>
-                                </div>
-                                <div className='card-footer'>
-                                    <a href='https://abhaypai.github.io/htmlpagecache/'
-                                        className='btn btn-primary' target='_blank'>Live Demo</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div className='d-flex m-3'>
-                            <div className='card bg-danger text-center'>
-                                <div className='card-header'>Javascript Pubsub</div>
-                                <div className='card-body'>
-                                    <a href='https://github.com/AbhayPai/pubsub'
-                                        className='btn btn-primary' target='_blank'>Download</a>
-                                </div>
-                                <div className='card-footer'>
-                                    <a href='https://abhaypai.github.io/pubsub/'
-                                        className='btn btn-primary' target='_blank'>Live Demo</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div className='d-flex m-3'>
-                            <div className='card bg-danger text-center'>
-                                <div className='card-header'>Crosstab Communication</div>
-                                <div className='card-body'>
-                                    <a href='https://github.com/AbhayPai/crosstab'
-                                        className='btn btn-primary' target='_blank'>Download</a>
-                                </div>
-                                <div className='card-footer'>
-                                    <a href='https://abhaypai.github.io/crosstab/'
-                                        className='btn btn-primary' target='_blank'>Live Demo</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div className='d-flex m-3'>
-                            <div className='card bg-danger text-center'>
-                                <div className='card-header'>Web Worker</div>
-                                <div className='card-body'>
-                                    <a href='https://github.com/AbhayPai/webworker'
-                                        className='btn btn-primary' target='_blank'>Download</a>
-                                </div>
-                                <div className='card-footer'>
-                                    <a href='https://abhaypai.github.io/webworker/'
-                                        className='btn btn-primary' target='_blank'>Live Demo</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div className='d-flex m-3'>
-                            <div className='card bg-danger text-center'>
-                                <div className='card-header'>Web Socket</div>
-                                <div className='card-body'>
-                                    <a href='https://github.com/AbhayPai/websocket'
-                                        className='btn btn-primary' target='_blank'>Download</a>
-                                </div>
-                                <div className='card-footer'>
-                                    <a href='https://abhaypai.github.io/websocket/'
-                                        className='btn btn-primary' target='_blank'>Live Demo</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div className='d-flex m-3'>
-                            <div className='card bg-danger text-center'>
-                                <div className='card-header'>Service Worker</div>
-                                <div className='card-body'>
-                                    <a href='https://github.com/AbhayPai/service-worker'
-                                        className='btn btn-primary' target='_blank'>Download</a>
-                                </div>
-                                <div className='card-footer'>
-                                    <a href='https://abhaypai.github.io/service-worker/'
-                                        className='btn btn-primary' target='_blank'>Live Demo</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div className='d-flex m-3'>
-                            <div className='card bg-danger text-center'>
-                                <div className='card-header'>Web Scraping</div>
-                                <div className='card-body'>
-                                    <a href='https://github.com/AbhayPai/webscraping'
-                                        className='btn btn-primary' target='_blank'>Download</a>
-                                </div>
-                                <div className='card-footer'>
-                                    <a href='https://github.com/AbhayPai/webscraping'
-                                        className='btn btn-primary' target='_blank'>Live Demo</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div className='d-flex m-3'>
-                            <div className='card bg-danger text-center'>
-                                <div className='card-header'>Composer</div>
-                                <div className='card-body'>
-                                    <a href='https://github.com/AbhayPai/composer-psr-4'
-                                        className='btn btn-primary' target='_blank'>Download</a>
-                                </div>
-                                <div className='card-footer'>
-                                    <a href='https://github.com/AbhayPai/composer-psr-4'
-                                        className='btn btn-primary' target='_blank'>Live Demo</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div className='d-flex m-3'>
-                            <div className='card bg-danger text-center'>
-                                <div className='card-header'>Geolocation API</div>
-                                <div className='card-body'>
-                                    <a href='https://github.com/AbhayPai/geolocation'
-                                        className='btn btn-primary' target='_blank'>Download</a>
-                                </div>
-                                <div className='card-footer'>
-                                    <a href='https://abhaypai.github.io/geolocation/'
-                                        className='btn btn-primary' target='_blank'>Live Demo</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        );
+        const { error, isLoaded, data } = this.state;
+
+        if (error) {
+            return <div className='display-1 text-white'>Error: {error.message}</div>;
+        } else if (!isLoaded) {
+            return <div className='display-1 text-white'>Loading...</div>;
+        } else {
+            let dataMarkup = {
+                __html: data.content
+            };
+
+            return (
+                <div dangerouslySetInnerHTML={dataMarkup} />
+            );
+        }
     }
 }
-
-Concepts.propTypes = {
-    content: PropTypes.string
-};
 
 export default Concepts;

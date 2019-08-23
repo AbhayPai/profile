@@ -1,52 +1,67 @@
 // Libraries
 import React from 'react';
-import PropTypes from 'prop-types';
 
 class WorkExperience extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            data: [],
+            error: null,
+            isLoaded: false,
+        };
+    }
+
     /*
      *  @componentDidMount()
      *  React Lifecyle Function
      */
-    componentDidMount(){
+    componentDidMount() {
         document.title = "Abhay Pai | Work Experience";
+
+        fetch('https://paiabhay.000webhostapp.com/api/workexperience').then((response) => {
+            if (response.status !== 200) {
+                return;
+            }
+
+            return response.json();
+        }).then((data) => {
+            this.setState({
+                data: data,
+                isLoaded: true,
+            });
+
+            return;
+        }).catch((error)=> {
+            this.setState({
+                error,
+                isLoaded: true,
+            });
+
+            return;
+        });
     }
 
+    /*
+     *  @render()
+     *  React Lifecyle Function
+     */
     render() {
-        /*eslint max-len: 0*/
-        return (
-            <div className='jumbotron jumbotron-fluid bg-transparent text-white m-0 p-0'>
-                <div className='container-fluid'>
-                    <h1 className='display-1 animated fadeIn delay'>{this.props.content}</h1>
-                    <div className='row'>
-                        <div className='col-12 col-sm-12'>
-                            <h3 className='display-4'>Srijan Technologies [Sr. Frontend Developer L2]</h3>
-                            <ul className='list-group d-block'>
-                                <li className='list-group-item text-white list-group-item-danger d-inline-block mr-1 mb-1'>2017 – Present</li>
-                                <li className='list-group-item text-white list-group-item-danger d-inline-block mr-1 mb-1'>
-                                Working onsite location of service company, which includes
-                                development efforts on day to day basis. Where we follow Agile
-                                Methodologies using ticketing system and divide the task accordingly
-                                within the team to give the best results to the business.</li>
-                            </ul>
-                            <h3 className='display-4'>Microquery Limited [Lead Developer]</h3>
-                            <ul className='list-group d-block'>
-                                <li className='list-group-item text-white list-group-item-danger d-inline-block mr-1 mb-1'>2014 – 2017</li>
-                                <li className='list-group-item text-white list-group-item-danger d-inline-block mr-1 mb-1'>
-                                My first company in my lifetime, where I learnt a lot of things in
-                                professional level. Here I started as an Intern, and as the years passed
-                                by I gave my best to achieve the position till Lead Developer. We used
-                                Waterfall approach here for the web development.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        );
+        const { error, isLoaded, data } = this.state;
+
+        if (error) {
+            return <div className='display-1 text-white'>Error: {error.message}</div>;
+        } else if (!isLoaded) {
+            return <div className='display-1 text-white'>Loading...</div>;
+        } else {
+            let dataMarkup = {
+                __html: data.content
+            };
+
+            return (
+                <div dangerouslySetInnerHTML={dataMarkup} />
+            );
+        }
     }
 }
-
-WorkExperience.propTypes = {
-    content: PropTypes.string
-};
 
 export default WorkExperience;

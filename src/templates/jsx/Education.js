@@ -1,44 +1,67 @@
 // Libraries
 import React from 'react';
-import PropTypes from 'prop-types';
 
 class Education extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            data: [],
+            error: null,
+            isLoaded: false,
+        };
+    }
+
     /*
      *  @componentDidMount()
      *  React Lifecyle Function
      */
-    componentDidMount(){
+    componentDidMount() {
         document.title = "Abhay Pai | Education";
+
+        fetch('https://paiabhay.000webhostapp.com/api/education').then((response) => {
+            if (response.status !== 200) {
+                return;
+            }
+
+            return response.json();
+        }).then((data) => {
+            this.setState({
+                data: data,
+                isLoaded: true,
+            });
+
+            return;
+        }).catch((error)=> {
+            this.setState({
+                error,
+                isLoaded: true,
+            });
+
+            return;
+        });
     }
 
+    /*
+     *  @render()
+     *  React Lifecyle Function
+     */
     render() {
-        /*eslint max-len: 0*/
-        return (
-            <div className='jumbotron jumbotron-fluid bg-transparent text-white m-0 p-0'>
-                <div className='container-fluid'>
-                    <h1 className='display-1 animated fadeIn delay'>{this.props.content}</h1>
-                    <div className='row animated fadeIn delay-1s'>
-                        <div className='col-12 col-sm-12'>
-                            <h3 className='display-4'>SVKM’s Usha Pravin Gandhi College of Management, Mumbai, India</h3>
-                            <ul className='list-group d-block'>
-                                <li className='list-group-item text-white list-group-item-danger d-inline-block mr-1 mb-1'>Graduated and Acquired Bachelor of Science and Information Technology with 68.32%</li>
-                                <li className='list-group-item text-white list-group-item-danger d-inline-block mr-1 mb-1'>2012 - 2014</li>
-                            </ul>
-                            <h3 className='display-4'>Pravin Rohidas Patil Polytechnic, Mumbai, India</h3>
-                            <ul className='list-group d-block'>
-                                <li className='list-group-item text-white list-group-item-danger d-inline-block mr-1 mb-1'>Passed Diploma in Electronic and Telecommunication by acquiring 76.40%</li>
-                                <li className='list-group-item text-white list-group-item-danger d-inline-block mr-1 mb-1'>2009 - 2012</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        );
+        const { error, isLoaded, data } = this.state;
+
+        if (error) {
+            return <div className='display-1 text-white'>Error: {error.message}</div>;
+        } else if (!isLoaded) {
+            return <div className='display-1 text-white'>Loading...</div>;
+        } else {
+            let dataMarkup = {
+                __html: data.content
+            };
+
+            return (
+                <div dangerouslySetInnerHTML={dataMarkup} />
+            );
+        }
     }
 }
-
-Education.propTypes = {
-    content: PropTypes.string
-};
 
 export default Education;
