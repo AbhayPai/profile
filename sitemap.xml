@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+    <url>
+        <loc>https://abhaypai.github.io/profile/</loc>
+        <lastmod>2019-09-03T05:39:21+00:00</lastmod>
+    </url>
+    <url>
+        <loc>https://abhaypai.github.io/profile/web/#/about</loc>
+        <lastmod>2019-09-03T05:39:21+00:00</lastmod>
+    </url>
+    <url>
+        <loc>https://abhaypai.github.io/profile/web/#/skills</loc>
+        <lastmod>2019-09-03T05:39:21+00:00</lastmod>
+    </url>
+    <url>
+        <loc>https://abhaypai.github.io/profile/web/#/education</loc>
+        <lastmod>2019-09-03T05:39:21+00:00</lastmod>
+    </url>
+    <url>
+        <loc>https://abhaypai.github.io/profile/web/#/work-experience</loc>
+        <lastmod>2019-09-03T05:39:21+00:00</lastmod>
+    </url>
+    <url>
+        <loc>https://abhaypai.github.io/profile/web/#/project</loc>
+        <lastmod>2019-09-03T05:39:21+00:00</lastmod>
+    </url>
+    <url>
+        <loc>https://abhaypai.github.io/profile/web/#/basic-frameworks</loc>
+        <lastmod>2019-09-03T05:39:21+00:00</lastmod>
+    </url>
+    <url>
+        <loc>https://abhaypai.github.io/profile/web/#/concepts</loc>
+        <lastmod>2019-09-03T05:39:21+00:00</lastmod>
+    </url>
+</urlset>
