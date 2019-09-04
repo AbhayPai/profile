@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 class ContainerFluid extends React.Component {
     render() {
         return (
-            <div id='content' className='container-fluid bg-primary'>
+            <div id='content' className='container-fluid'>
                 {this.props.children}
             </div>
         );

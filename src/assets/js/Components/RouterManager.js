@@ -15,7 +15,7 @@ class RouterManager extends React.Component {
     render() {
         return (
             <Router history={hashHistory}>
-                <nav className='navbar navbar-expand-md bg-danger navbar-dark'>
+                <nav className='navbar navbar-expand-md bg-primary navbar-dark'>
                     <NavLink className='navbar-brand' title='Abhay Pai' className='nav-link' to='/about'>
                         <img src='./images/ap-logo.jpg' alt='Abhay Pai' className='img-fluid' />
                     </NavLink>
