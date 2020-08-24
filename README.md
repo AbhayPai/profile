@@ -1,3 +1,3 @@
 # Profile
 
-[Abhay Pai Profile](https://abhaypai.github.io/profile)
+[Abhay Pai](https://abhaypai.info/)
